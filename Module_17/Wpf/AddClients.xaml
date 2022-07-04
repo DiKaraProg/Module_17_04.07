@@ -1,0 +1,45 @@
+﻿<Window x:Class="Module_17.AddClients"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Module_17"
+        mc:Ignorable="d"
+        Title="AddClients" Height="450" Width="800">
+    <Grid>
+        <Border Background="LightSkyBlue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" CornerRadius="10">
+            <StackPanel>
+                <TextBlock Text="Middle Name" FontSize="18" Margin="10 5" HorizontalAlignment="Center" FontWeight="Bold"/>
+                <TextBox x:Name="MiddleName_add" FontSize="18" Margin="10 5" />
+                <TextBlock Text="First Name" FontSize="18" Margin="10 5" HorizontalAlignment="Center" FontWeight="Bold" />
+                <TextBox x:Name="FirstName_add" FontSize="18" Margin="10 5" />
+                <TextBlock Text="Father Name" FontSize="18" Margin="10 5" HorizontalAlignment="Center" FontWeight="Bold"/>
+                <TextBox x:Name="FatherName_add" FontSize="18" Margin="10 5" />
+                <TextBlock Text="Phone Number" FontSize="18" Margin="10 5" HorizontalAlignment="Center" FontWeight="Bold"/>
+                <TextBox x:Name="PhoneNumber_add" FontSize="18" Margin="10 5" />
+                <TextBlock Text="Email" FontSize="18" Margin="10 5" HorizontalAlignment="Center" FontWeight="Bold"/>
+                <TextBox x:Name="Email_add" FontSize="18" Margin="10 5" />
+
+                <Grid Height="52" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Add" HorizontalAlignment="Center"
+                             Width="100" Foreground="White"
+                            Background="Purple" x:Name="AddButton"
+                            Margin="10 5" />
+                    <Button Content="Close" HorizontalAlignment="Center" x:Name="CloseButton"
+                            Grid.Column="1"  Width="101" 
+                            Foreground="White" 
+                            Background="Purple" Margin="10 5" />
+
+                </Grid>
+                
+            </StackPanel>
+
+
+        </Border>
+
+    </Grid>
+</Window>
